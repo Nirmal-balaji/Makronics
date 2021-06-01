@@ -101,7 +101,7 @@ a:hover{
   </nav>
 <br>
   <div class="rdrive">
-    <img class="mySlides" src="news.jpg" alt="" height="105px" width="165px">
+    <img class="mySlides" src="/news.JPG" alt="" height="105px" width="165px">
     <h3>Currently, We are looking for many Engineering Professionals to work in our team for a Salary Package of 6.0 LPA.</h3><br>
     <a href="/career registeration.html" class="button">Apply</a>
   </div>

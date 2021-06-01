@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>IT Solutions and Business Services</title>
-    <link rel="shortcut icon" href="favicon.jpg">
+    <link rel="shortcut icon" href="/favicon.jpg">
     <style media="screen">
 *{
 padding: 0;
@@ -109,13 +109,13 @@ a:hover{
   <br><br>
   <div class=""><br>
     <h2>Our Products for your Businesss</h2><br>
-    <img src="wbbus.jpg" alt=""><img src="ecomweb.jpg" alt=""><img src="elrnweb.jpg" alt=""></a>
+    <img src="/wbbus.jpg" alt=""><img src="/ecomweb.jpg" alt=""><img src="/elrnweb.jpg" alt=""></a>
   </div>
 
   <div class=""><br>
     <h2>Our Products For Your Business Management</h2><br>
-    <img src="pjctmgmt.jpg" alt=""><img src="airec.jpg" alt=""><img src="wkflwmg.jpg" alt="">
-    <img src="finmod.jpg" alt=""><img src="hrmg.jpg" alt="">
+    <img src="/pjctmgmt.jpg" alt=""><img src="/airec.jpg" alt=""><img src="/wkflwmg.jpg" alt="">
+    <img src="/finmod.jpg" alt=""><img src="/hrmg.jpg" alt="">
   </div>
 
 

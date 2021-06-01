@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Makronics Career Registeration </title>
+    <link rel="shortcut icon" href="favicon.jpg">
+    <style media="screen">
+
+      body{
+        background-color:green;
+      }
+
+      .button{
+        background: white;
+        padding: 10px 15px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 18px;
+        border-radius: 5px;
+        box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+        margin-top: 25px;
+        text-decoration: none;
+        transition: 0.4s;
+      }
+
+      a:hover{
+        background: #3366ff;
+        transition: .5s;
+      }
+
+
+      .popup{
+        background: rgba(0,0,0,0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+    .popup-content{
+        height: 70%;
+        width: 40%;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        position: relative;
+        align-items: center;
+      }
+
+
+    .popup1{
+        background: rgba(0,0,0,0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+    .popup1-content{
+        height: 80%;
+        width: 40%;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        position: relative;
+        align-items: center;
+      }
+
+
+    .popup2{
+        background: rgba(0,0,0,0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+    .popup2-content{
+        height: 90%;
+        width: 40%;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        position: relative;
+        align-items: center;
+      }
+
+
+    .popup3{
+        background: rgba(0,0,0,0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+    .popup3-content{
+        height: 90%;
+        width: 40%;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        position: relative;
+        align-items: center;
+     }
+
+
+    .popup4{
+        background: rgba(0,0,0,0.6);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .popup4-content{
+        height: 60%;
+        width: 40%;
+        background: white;
+        padding: 20px;
+        border-radius: 5px;
+        position: relative;
+        align-items: center;
+    }
+
+
+    </style>
+  </head>
+  <body>
+
+    <center>
+      <h1><font color="white">Welcome to Career Registeration Section !!!</font></h1><br>
+      <h3><b>Step-1</b></h3>
+      <a href="#" class="button" onclick="a()">Personal Details</a><br><br>
+      <h3><b>Step-2</b></h3>
+      <a href="#" class="button" onclick="b()">Schooling Details</a><br><br>
+      <h3><b>Step-3</b></h3>
+      <a href="#" class="button" onclick="b()">Graduation Details</a><br><br>
+      <h3><b>Step-4</b></h3>
+      <a href="#" class="button" onclick="b()">Fresher / Experience Details</a><br><br>
+      <h3><b>Step-5</b></h3>
+      <a href="#" class="button" onclick="b()">Skills</a><br><br>
+
+
+    <form id="myForm" action="index.html" method="post">
+      <div class="popup">
+        <div class="popup-content">
+          <h2>Personal Section</h2>
+
+            <label><font color="blue">Name:</font></label><br>
+            <input type="text" name="Name" value=""><br>
+            <label><font color="blue">Email ID:</font></label><br>
+            <input type="text" name="Email ID" value=""><br>
+            <label><font color="blue">Contact Number:</font></label><br>
+            <input type="text" name="Contact Number" value=""><br>
+            <label><font color="blue">Date of Birth:</font></label><br>
+            <input type="text" name="Date of Birth" value=""><br>
+            <label><font color="blue">Father Name</font></label><br>
+            <input type="text" name="Father Name" value=""><br>
+            <label><font color="blue">Father Contact Number:</font></label><br>
+            <input type="number" name="Father Contact Number" value=""><br>
+            <label><font color="blue">Father Occupation</font></label><br>
+            <input type="text" name="Father Occupation" value=""><br>
+            <label><font color="blue">Residential City</font></label><br>
+            <input type="text" name="Residential City" value=""><br><br>
+            <a href="#" class="button" onclick="c()">Next</a>
+
+        </div>
+      </div>
+
+      <div class="popup1">
+        <div class="popup1-content">
+          <h2>Schooling Details</h2>
+
+            <label><font color="blue">10 th Standard School Name</font></label><br>
+            <input type="text" name="10 th Standard School Name" value=""><br><br>
+            <label><font color="blue">10th Scoring Marks in Percentage:</font></label><br>
+            <input type="number" name="10th Scoring Marks in Percentage:" value=""><br><br>
+            <label><font color="blue">10th Passed out Year</font></label><br>
+            <input type="number" name="10th Passed out Year" value=""><br><br>
+            <label><font color="blue">12 th Standard School Name</font></label><br>
+            <input type="text" name="12 th Standard School Name" value=""><br><br>
+            <label><font color="blue">12th Scoring Marks in Percentage:</font></label><br>
+            <input type="number" name="12th Scoring Marks in Percentage:" value=""><br><br>
+            <label><font color="blue">12th Passed out Year</font></label><br>
+            <input type="number" name="12th Passed out Year" value=""><br><br>
+            <a href="#" class="button" onclick="d()">Next</a>
+
+        </div>
+      </div>
+
+      <div class="popup2">
+        <div class="popup2-content">
+          <h2>Graduation Details</h2>
+
+            <label><font color="blue">UG College Name</font></label><br>
+            <input type="text" name="UG College Name" value=""><br><br>
+            <label><font color="blue">UG Degree Name</font></label><br>
+            <input type="text" name="UG Degree Name" value=""><br><br>
+            <label><font color="blue">UG Scoring Percentage</font></label><br>
+            <input type="text" name="UG Scoring Percentage" value=""><br><br>
+            <label><font color="blue">UG Passed out Year</font></label><br>
+            <input type="text" name="UG Passed out Year" value=""><br><br>
+            <label><font color="blue">PG College Name</font></label><br>
+            <input type="text" name="PG College Name" value=""><br><br>
+            <label><font color="blue">PG Degree Name</font></label><br>
+            <input type="text" name="PG Degree Name" value=""><br><br>
+            <label><font color="blue">PG Scoring Percentage</font></label><br>
+            <input type="text" name="PG Scoring Percentage" value=""><br><br>
+            <label><font color="blue">PG Passed out Year</font></label><br>
+            <input type="text" name="PG Passed out Year" value=""><br><br>
+            <a href="#" class="button" onclick="e()">Next</a>
+        </div>
+      </div>
+
+      <div class="popup3">
+        <div class="popup3-content">
+           <h2>Skills</h2>
+
+             <label><font color="blue">Skill 1</font></label><br>
+             <input type="text" name="Skill 1" value=""><br><br>
+             <label><font color="blue">Skill 2</font></label><br>
+             <input type="text" name="Skill 2" value=""><br><br>
+             <label><font color="blue">Skill 3</font></label><br>
+             <input type="text" name="Skill 3" value=""><br><br>
+             <label><font color="blue">Skill 4</font></label><br>
+             <input type="text" name="Skill 4" value=""><br><br>
+
+            <button type="submit" id="submit">Submit</button>
+
+        </div>
+      </div>
+
+    </form>
+
+    <div class="popup4">
+        <div class="popup4-content">
+          <h2>Your Application is Submitted Successfully !!!</h2>
+          You Can Click the Below Button For Round-1 Test.<br><br><br>
+          <a href="file:///E:/Nedtech%20Website%20Files/Career%20Registeration/Round1.html" class="button">Round-1</a>
+        </div>
+      </div>
+
+
+
+
+
+  <script type="text/javascript">
+
+      function a(){
+        document.querySelector(".popup").style.display = "flex";
+      }
+
+      function b(){
+        alert("Please Fill Step-1: Personal Details");
+      }
+
+
+      function c(){
+        document.querySelector(".popup").style.display = "none";
+        document.querySelector(".popup1").style.display = "flex";
+      }
+
+      function d(){
+        document.querySelector(".popup").style.display = "none";
+        document.querySelector(".popup1").style.display = "none";
+        document.querySelector(".popup2").style.display = "flex";
+      }
+
+      function e(){
+        document.querySelector(".popup").style.display = "none";
+        document.querySelector(".popup1").style.display = "none";
+        document.querySelector(".popup2").style.display = "none";
+        document.querySelector(".popup3").style.display = "flex";
+      }
+
+
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+          $(function () {
+              $('#myForm').submit(function (e) {
+                  e.preventDefault();
+                  var myData = $('form#myForm :input').serialize();
+                  var url = 'https://script.google.com/macros/s/AKfycbzJzuotxjO-JjRHIIpouSQrDHPk0sO9hgZEdBN6ZachTqzknhGorSEqzffIxOyQo1IYHA/exec'
+                  console.log(myData)
+                  $.ajax({
+                      url: url
+                      , method: 'POST'
+                      , data: myData
+                      , success: function (data) {
+                          console.log(data)
+                          document.querySelector(".popup4").style.display = "flex";
+                      }
+                  })
+              })
+            });
+     </script>
+
+    </center>
+  </body>
+</html>

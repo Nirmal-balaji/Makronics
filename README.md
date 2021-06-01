@@ -30,7 +30,6 @@ line-height: 80px;
 padding: 0 100px;
 font-weight: bold;
 }
-
 nav ul{
 float: right;
 margin-right: 20px;

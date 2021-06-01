@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Makronics Round-1 Test</title>
+    <link rel="shortcut icon" href="favicon.jpg">
+    <style media="screen">
+
+            body{
+              background-color:green;
+            }
+
+            .button{
+              background: white;
+              padding: 10px 15px;
+              font-weight: bolder;
+              text-transform: uppercase;
+              font-size: 18px;
+              border-radius: 5px;
+              box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+              margin-top: 25px;
+              text-decoration: none;
+              transition: 0.4s;
+            }
+
+            a:hover{
+              background: #3366ff;
+              transition: .5s;
+            }
+
+            .popup{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+            .popup-content{
+              height: 70%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .instructions{
+              background-color:white;
+              width: 80%
+            }
+
+            .popup{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup-content{
+              height: 30%;
+              width: 30%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup4{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup4-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup3{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup3-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup5{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup5-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup6{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup6-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup7{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup7-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup8{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup8-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup9{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup9-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup10{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup10-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup11{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup11-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup12{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup12-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup13{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup13-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup14{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup14-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup15{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+            .popup15-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup16{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup16-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup17{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup17-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup18{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup18-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup19{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup19-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup20{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup20-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup21{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup21-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup22{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup22-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup23{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup23-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup24{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup24-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup25{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup25-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup26{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup26-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup27{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup27-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+            .popup28{
+              background: rgba(0,0,0,0.6);
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              top: 0;
+              display: none;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+            }
+
+          .popup28-content{
+              height: 50%;
+              width: 40%;
+              background: white;
+              padding: 20px;
+              border-radius: 5px;
+              position: relative;
+              align-items: center;
+            }
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+
+      <center>
+        <h1><font color="white">All India Makronics Recruitment Drive 2021-2022</font></h1>
+        <h1><font color="white">Welcome to Round-1: Technical Aptitude Evaluation !!!</font></h1><br>
+
+        <div class="instructions"><br>
+          <h3><font color="blue"><b><u>Read the Instructions Carefully</u></b></font></h3>
+            <p><font color="blue">In this Round there will be 25 Questions you need to attend in 30 minutes.</font></p>
+            <p><font color="blue">Each Questions you need to answer it in 72 Seconds.If you miss that 72 seconds you can't able to answer to those Question again.</font></p>
+            <p><font color="blue">There will be no breaks during the test duration.</font></p>
+            <p><font color="blue">You can take the test only once, you are not allowed to appear in the test again.</font></p>
+            <p><font color="blue">You Should not Navigate away from the test, if you navigate away your test will not be submitted to us.</font></p>
+            <p><font color="blue">Once you pass the Question you can't able to attend the Question again.</font></p>
+            <p><font color="blue">You need to type your answers in the textbox before the time is going to End, If you didn't type, Your Answers will not be recorded.</font></p>
+          <br><br>
+            <a href="#" class="button" onclick="a()">Start the Test</a><br><br>
+          <br>
+        </div>
+
+        <form id="myForm" action="index.html" method="post">
+
+        <div class="popup">
+          <div class="popup-content">
+            <p id="count">20</p>
+            Your Email ID:
+            <input type="text" name="Email ID" placeholder="Email ID"><br><br><br>
+
+          </div>
+        </div>
+
+
+        <div class="popup3">
+          <div class="popup3-content">
+            <p id="cou">72</p>
+            <label>Raju has 14 currency notes in his pocket consisting of only 20 and 10 rupee note. The total money value of the note is 230. The Number of 10 rupee note that raju has is:</label>
+            <br><br>a) 10
+            <br><br>b) 9
+            <br><br>c) 6
+            <br><br>d) 5
+            <br><br><input type="text" name="Q1" placeholder="Enter Your Answer"><br><br><br>
+          </div>
+        </div>
+
+        <div class="popup4">
+          <div class="popup4-content">
+            <p id="aa">72</p>
+            <label>In a Sequence of 12 consecutive odd numbers, the sum of first 5 numbers is 425. What is the Sum of last 5 numbers in the Sequence ?</label>
+            <br><br>a) 425
+            <br><br>b) 445
+            <br><br>c) 495
+            <br><br>d) 485
+            <br><br><input type="text" name="Q2" placeholder="Enter Your Answer"><br><br><br>
+          </div>
+        </div>
+
+        <div class="popup6">
+          <div class="popup6-content">
+            <p id="ab">72</p>
+            <label>A wire would enclose an area of 1936 m^2, if it is bent into a square. The wire is cut into two pieces. The longer piece is thrice as long as the shorter piece. The long and the short
+pieces are bent into a square and a circle, respectively. Which of the following choices is closest to the sum of the areas enclosed by the two pieces in square meters?</label>
+            <br><br>a) 1096
+            <br><br>b) 1111
+            <br><br>c) 1243
+            <br><br>d) 2486
+            <br><br><input type="text" name="Q3" placeholder="Enter Your Answer"><br><br><br>
+          </div>
+        </div>
+
+        <div class="popup7">
+          <div class="popup7-content">
+              <p id="ac">72</p>
+                <label>A contract is to be completed in 52 days and 125 identical robots were employed, each operational for 7 hours a day. After 39 days, five-seventh of the work was completed. How many additional robots would be required to complete the work on time, if each robot is
+ now operational for 8 hours a day?
+</label>
+                    <br><br>a) 50
+                    <br><br>b) 89
+                    <br><br>c) 146
+                    <br><br>d) 175
+                    <br><br><input type="text" name="Q4" placeholder="Enter Your Answer"><br><br><br>
+            </div>
+        </div>
+
+
+                <div class="popup8">
+                  <div class="popup8-content">
+                    <p id="ad">72</p>
+                    <label>Let N, x and y be positive integers such that N = x + y, 2 < x < 10 and 14 < y < 23. If N > 25, then how many distinct values are possible for N?</label>
+                    <br><br>a) 3
+                    <br><br>b) 4
+                    <br><br>c) 5
+                    <br><br>d) 6
+                    <br><br><input type="text" name="Q5" placeholder="Enter Your Answer"><br><br><br>
+                  </div>
+                </div>
+
+                <div class="popup9">
+                  <div class="popup9-content">
+                  <p id="ae">72</p>
+                  <label>A contractor agreed to construct a 6 km road in 200 days. He employed 140 persons for the work. After 60 days, he realized that only 1.5 km road has been completed. How many additional people would he need to employ in order to finish the work exactly on time?</label>
+                  <br><br>a) 30
+                  <br><br>b) 40
+                  <br><br>c) 45
+                  <br><br>d) 50
+                  <br><br><input type="text" name="Q6" placeholder="Enter Your Answer"><br><br><br>
+                </div>
+            </div>
+
+            <div class="popup10">
+              <div class="popup10-content">
+              <p id="af">72</p>
+              <label>Dick is thrice as old as Tom and Harry is twice as old as Dick. If Dick's age is 1 year less than the average age of all three, then Harry's age, in years, is</label>
+              <br><br>a) 18
+              <br><br>b) 20
+              <br><br>c) 16
+              <br><br>d) 14
+              <br><br><input type="text" name="Q7" placeholder="Enter Your Answer"><br><br><br>
+            </div>
+        </div>
+
+        <div class="popup11">
+          <div class="popup11-content">
+          <p id="ag">72</p>
+          <label>A train of length 200 meters is Entering into a platform of length 700 meters, with a Speed of 50 Kmph. What is the time taken for the train to pass the platform ?</label>
+          <br><br>a) 65s.
+          <br><br>b) 75s.
+          <br><br>c) 80s.
+          <br><br>d) 90s.
+          <br><br><input type="text" name="Q8" placeholder="Enter Your Answer"><br><br><br>
+        </div>
+    </div>
+
+    <div class="popup12">
+      <div class="popup12-content">
+      <p id="ah">72</p>
+      <label>A Company is Increasing its revenue of Rs.1 crore each month from previous month. What will be the turn over per year for that company ?</label>
+      <br><br>a) 12cr.
+      <br><br>b) 25cr.
+      <br><br>c) 50cr.
+      <br><br>d) 78cr.
+      <br><br><input type="text" name="Q9" placeholder="Enter Your Answer"><br><br><br>
+    </div>
+</div>
+
+<div class="popup13">
+  <div class="popup13-content">
+  <p id="ai">72</p>
+  <label>Assume today Date was 31.05.2021, So How many days passed from 01.06.1992 ? </label>
+  <br><br>a) 9313
+  <br><br>b) 9470
+  <br><br>c) 10225
+  <br><br>d) 11234
+  <br><br><input type="text" name="Q10" placeholder="Enter Your Answer"><br><br><br>
+</div>
+</div>
+
+<div class="popup14">
+  <div class="popup14-content">
+    <p id="aj">72</p>
+    <label>What will be the Summation of angles 10'o clock and 4'o clock ? </label>
+    <br><br>a) 150
+    <br><br>b) 160
+    <br><br>c) 170
+    <br><br>d) 180
+    <br><br><input type="text" name="Q11" placeholder="Enter Your Answer"><br><br><br>
+  </div>
+</div>
+
+<div class="popup15">
+  <div class="popup15-content">
+    <p id="ak">72</p>
+    <label>There are two circles, one of which radius is 17cm, and its area is 70% more than another circle. Now what is the radius of the second circle in cm?</label>
+    <br><br>a) 6.3
+    <br><br>b) 7.3
+    <br><br>c) 8.3
+    <br><br>d) 9.3
+    <br><br><input type="text" name="Q12" placeholder="Enter Your Answer"><br><br><br>
+  </div>
+</div>
+
+<div class="popup16">
+  <div class="popup16-content">
+    <p id="al">72</p>
+    <label>There are a 3 subjects, Physics(P), Chemistry(C) and Maths(M). In a School there are total of 1600 students, and there 722 centum scorers. 122 students scored centum in P alone,
+    147 students scored centum in C alone, 100 students scored centum in M alone. 72 students scored centum in P and C alone. 34 students scored centum in C and M alone.
+    22 students scored centum in P and M alone. what is the percentage of students scored centum in 3 subjects in that school ?</label>
+    <br><br>a) 14%
+    <br><br>b) 15%
+    <br><br>c) 16%
+    <br><br>d) 25%
+    <br><br><input type="text" name="Q13" placeholder="Enter Your Answer"><br><br><br>
+  </div>
+</div>
+
+<div class="popup17">
+  <div class="popup17-content">
+      <p id="am">72</p>
+        <label>1st Series:  1+3+5+7+9+.....  2nd Series: 2+4+6+8+.....  What is the percentage increase in Sum of first 50 items in 2nd series as compared to the Sum of first 50 itesms in the 1st series ?</label>
+            <br><br>a) 2%
+            <br><br>b) 3%
+            <br><br>c) 4%
+            <br><br>d) 5%
+            <br><br><input type="text" name="Q14" placeholder="Enter Your Answer"><br><br><br>
+    </div>
+</div>
+
+
+        <div class="popup18">
+          <div class="popup18-content">
+            <p id="an">72</p>
+            <label>There was a line y= x-2+3, what is the slope of the line at (1,2) ? </label>
+            <br><br>a) 1
+            <br><br>b) 2
+            <br><br>c) 3
+            <br><br>d) 4
+            <br><br><input type="text" name="Q15" placeholder="Enter Your Answer"><br><br><br>
+          </div>
+        </div>
+
+        <div class="popup19">
+          <div class="popup19-content">
+          <p id="ao">72</p>
+          <label>When a Pair of Balanced Dice is rolled, what are all the Probablities of getting the Sum 7 or 11 ?</label>
+          <br><br>a) 0.111
+          <br><br>b) 0.222
+          <br><br>c) 0.333
+          <br><br>d) 0.444
+          <br><br><input type="text" name="Q16" placeholder="Enter Your Answer"><br><br><br>
+        </div>
+    </div>
+
+    <div class="popup20">
+      <div class="popup20-content">
+      <p id="ap">72</p>
+      <label>A Cricket club has 15 members, of whom only 5 can bowl. what is the Probablity that in a team of 11 members atleast 3 bowlers are selected ?</label>
+      <br><br>a) 0.923
+      <br><br>b) 0.876
+      <br><br>c) 0.732
+      <br><br>d) 0.414
+      <br><br><input type="text" name="Q17" placeholder="Enter Your Answer"><br><br><br>
+    </div>
+</div>
+
+<div class="popup21">
+  <div class="popup21-content">
+  <p id="aq">72</p>
+  <label>A Factory has two machines A and B and produces 30% and 70% of items respectively, and 3% and 4% of items were defective while producing respectively. An Item
+  is drawn randomly and its defective. Find the Probablity that it was produced by Machine B ?</label>
+  <br><br>a) 0.456
+  <br><br>b) 0.556
+  <br><br>c) 0.656
+  <br><br>d) 0.756
+  <br><br><input type="text" name="Q18" placeholder="Enter Your Answer"><br><br><br>
+</div>
+</div>
+
+<div class="popup22">
+<div class="popup22-content">
+<p id="ar">72</p>
+<label>What is the Value of pi ?</label>
+<br><br>a) 3.141596373647264......
+<br><br>b) 3.141937847484994......
+<br><br>c) 3.141592653589793......
+<br><br>d) 3.141593653589792......
+<br><br><input type="text" name="Q19" placeholder="Enter Your Answer"><br><br><br>
+</div>
+</div>
+
+<div class="popup23">
+<div class="popup23-content">
+<p id="as">72</p>
+<label>The Cost function for a product in a firm is given by 5q^2, q is the amount of Production.The firm can sell for a price of Rs.50/unit. The Number of units
+to be produced by a firm such that profit is maximized ?</label>
+<br><br>a) 5
+<br><br>b) 10
+<br><br>c) 15
+<br><br>d) 25
+<br><br><input type="text" name="Q20" placeholder="Enter Your Answer"><br><br><br>
+</div>
+</div>
+
+<div class="popup24">
+  <div class="popup24-content">
+  <p id="at">72</p>
+  <label>Assume f(x,y) = x^n y^m = S. If x is dobuled and y is halved, then f is </label>
+  <br><br>a) 2^(n-m).S
+  <br><br>b) 2^(m-n).S
+  <br><br>c) 2.(n-m).S
+  <br><br>d) 2.(m-n).S
+  <br><br><input type="text" name="Q21" placeholder="Enter Your Answer"><br><br><br>
+</div>
+</div>
+
+<div class="popup25">
+<div class="popup25-content">
+<p id="au">72</p>
+<label>It takes 20s and 17s respectively, for 2 trains travelling at different constant speeds to completely pass through a telegraph post. The length of first train is 100m and that of second
+train is 110m. The Magnitude of the differences in the speeds of the two trains in m/s is</label>
+<br><br>a) 1.4
+<br><br>b) 2
+<br><br>c) 12
+<br><br>d) 22
+<br><br><input type="text" name="Q22" placeholder="Enter Your Answer"><br><br><br>
+</div>
+</div>
+
+<div class="popup26">
+<div class="popup26-content">
+<p id="av">72</p>
+<label>A Box contains of Apples and Oranges both ripe and unripe mixed together, 20% are the unripe fruits, of the unripe fruits 40% are apples. of the ripe ones 60% are oranges. If a box contains total of 5692000
+fruits, how many of them are Apples? </label>
+<br><br>a) 2029198
+<br><br>b) 2276800
+<br><br>c) 2590023
+<br><br>d) 2029002
+<br><br><input type="text" name="Q23" placeholder="Enter Your Answer"><br><br><br>
+</div>
+</div>
+
+<div class="popup27">
+<div class="popup27-content">
+<p id="aw">72</p>
+<label>What will be the Maximum Sum of 92,90,88,....</label>
+<br><br>a) 2100
+<br><br>b) 2142
+<br><br>c) 2162
+<br><br>d) 2182
+<br><br><input type="text" name="Q24" placeholder="Enter Your Answer"><br><br><br>
+</div>
+</div>
+
+<div class="popup28">
+<div class="popup28-content">
+<p id="ax">72</p>
+<label>A Person wears Red T-shirt once in 3 days and blue jeans once in 7 days and black shoe once in 11 days. Then in which day he will wear all the three wears together.</label>
+<br><br>a) 200
+<br><br>b) 231
+<br><br>c) 155
+<br><br>d) 189
+<br><br><input type="text" name="Q25" placeholder="Enter Your Answer"><br><br><br>
+</div>
+</div>
+
+
+
+        <div class="popup5">
+          <div class="popup5-content">
+              Your Test has been Submitted.
+              <br>
+              You Will Receive an Email Regarding the Results.
+              <br><br><br><br>
+              Your Name:
+              <input type="text" name="Name" placeholder="Name"><br><br><br>
+              Your Contact Number:
+              <input type="text" name="Contact Number" placeholder="Contact Number"><br><br><br>
+                <button type="submit" id="submit">Submit</button>
+
+          </div>
+        </div>
+
+        </form>
+
+        <script>
+
+          function a(){
+            document.querySelector(".popup").style.display="flex";
+
+            var counter=20;
+            setInterval(function (){
+            counter--;
+            if(counter >= 0){
+              id = document.getElementById("count");
+              id.innerHTML = counter;
+            }
+            if(counter == 0){
+              document.querySelector(".popup").style.display="none";
+              document.querySelector(".popup3").style.display="flex";
+
+              var coun=72;
+              setInterval(function (){
+              coun--;
+              if(coun >= 0){
+                id = document.getElementById("cou");
+                id.innerHTML = coun;
+              }
+              if(coun == 0){
+                document.querySelector(".popup").style.display="none";
+                document.querySelector(".popup3").style.display="none";
+                document.querySelector(".popup4").style.display="flex";
+
+                var co=72;
+                setInterval(function (){
+                co--;
+                if(co >= 0){
+                  id = document.getElementById("aa");
+                  id.innerHTML = co;
+                }
+                if(co == 0){
+                  document.querySelector(".popup").style.display="none";
+                  document.querySelector(".popup3").style.display="none";
+                  document.querySelector(".popup4").style.display="none";
+                  document.querySelector(".popup6").style.display="flex";
+
+                  var ca=72;
+                  setInterval(function (){
+                  ca--;
+                  if(ca >= 0){
+                    id = document.getElementById("ab");
+                    id.innerHTML = ca;
+                  }
+                  if(ca == 0){
+                    document.querySelector(".popup").style.display="none";
+                    document.querySelector(".popup3").style.display="none";
+                    document.querySelector(".popup4").style.display="none";
+                    document.querySelector(".popup6").style.display="none";
+                    document.querySelector(".popup7").style.display="flex";
+
+                    var cb=72;
+                    setInterval(function (){
+                    cb--;
+                    if(cb >= 0){
+                      id = document.getElementById("ac");
+                      id.innerHTML = cb;
+                    }
+                    if(cb == 0){
+                      document.querySelector(".popup").style.display="none";
+                      document.querySelector(".popup3").style.display="none";
+                      document.querySelector(".popup4").style.display="none";
+                      document.querySelector(".popup6").style.display="none";
+                      document.querySelector(".popup7").style.display="none";
+                      document.querySelector(".popup8").style.display="flex";
+
+                      var cc=72;
+                      setInterval(function (){
+                      cc--;
+                      if(cc >= 0){
+                        id = document.getElementById("ad");
+                        id.innerHTML = cc;
+                      }
+                      if(cc == 0){
+                        document.querySelector(".popup").style.display="none";
+                        document.querySelector(".popup3").style.display="none";
+                        document.querySelector(".popup4").style.display="none";
+                        document.querySelector(".popup6").style.display="none";
+                        document.querySelector(".popup7").style.display="none";
+                        document.querySelector(".popup8").style.display="none";
+                        document.querySelector(".popup9").style.display="flex";
+
+                        var cd=72;
+                        setInterval(function (){
+                        cd--;
+                        if(cd >= 0){
+                          id = document.getElementById("ae");
+                          id.innerHTML = cd;
+                        }
+                        if(cd == 0){
+                          document.querySelector(".popup").style.display="none";
+                          document.querySelector(".popup3").style.display="none";
+                          document.querySelector(".popup4").style.display="none";
+                          document.querySelector(".popup6").style.display="none";
+                          document.querySelector(".popup7").style.display="none";
+                          document.querySelector(".popup8").style.display="none";
+                          document.querySelector(".popup9").style.display="none";
+                          document.querySelector(".popup10").style.display="flex";
+
+                          var ce=72;
+                          setInterval(function (){
+                          ce--;
+                          if(ce >= 0){
+                            id = document.getElementById("af");
+                            id.innerHTML = ce;
+                          }
+                          if(ce == 0){
+                            document.querySelector(".popup").style.display="none";
+                            document.querySelector(".popup3").style.display="none";
+                            document.querySelector(".popup4").style.display="none";
+                            document.querySelector(".popup6").style.display="none";
+                            document.querySelector(".popup7").style.display="none";
+                            document.querySelector(".popup8").style.display="none";
+                            document.querySelector(".popup9").style.display="none";
+                            document.querySelector(".popup10").style.display="none";
+                            document.querySelector(".popup11").style.display="flex";
+
+                            var cf=72;
+                            setInterval(function (){
+                            cf--;
+                            if(cf >= 0){
+                              id = document.getElementById("ag");
+                              id.innerHTML = cf;
+                            }
+                            if(cf == 0){
+                              document.querySelector(".popup").style.display="none";
+                              document.querySelector(".popup3").style.display="none";
+                              document.querySelector(".popup4").style.display="none";
+                              document.querySelector(".popup6").style.display="none";
+                              document.querySelector(".popup7").style.display="none";
+                              document.querySelector(".popup8").style.display="none";
+                              document.querySelector(".popup9").style.display="none";
+                              document.querySelector(".popup10").style.display="none";
+                              document.querySelector(".popup11").style.display="none";
+                              document.querySelector(".popup12").style.display="flex";
+
+                              var cg=72;
+                              setInterval(function (){
+                              cg--;
+                              if(cg >= 0){
+                                id = document.getElementById("ah");
+                                id.innerHTML = cg;
+                              }
+                              if(cg == 0){
+                                document.querySelector(".popup").style.display="none";
+                                document.querySelector(".popup3").style.display="none";
+                                document.querySelector(".popup4").style.display="none";
+                                document.querySelector(".popup6").style.display="none";
+                                document.querySelector(".popup7").style.display="none";
+                                document.querySelector(".popup8").style.display="none";
+                                document.querySelector(".popup9").style.display="none";
+                                document.querySelector(".popup10").style.display="none";
+                                document.querySelector(".popup11").style.display="none";
+                                document.querySelector(".popup12").style.display="none";
+                                document.querySelector(".popup13").style.display="flex";
+
+                                var ch=72;
+                                setInterval(function (){
+                                ch--;
+                                if(ch >= 0){
+                                  id = document.getElementById("ai");
+                                  id.innerHTML = ch;
+                                }
+                                if(ch == 0){
+                                  document.querySelector(".popup").style.display="none";
+                                  document.querySelector(".popup3").style.display="none";
+                                  document.querySelector(".popup4").style.display="none";
+                                  document.querySelector(".popup6").style.display="none";
+                                  document.querySelector(".popup7").style.display="none";
+                                  document.querySelector(".popup8").style.display="none";
+                                  document.querySelector(".popup9").style.display="none";
+                                  document.querySelector(".popup10").style.display="none";
+                                  document.querySelector(".popup11").style.display="none";
+                                  document.querySelector(".popup12").style.display="none";
+                                  document.querySelector(".popup13").style.display="none";
+                                  document.querySelector(".popup14").style.display="flex";
+
+                                  var ci=72;
+                                  setInterval(function (){
+                                  ci--;
+                                  if(ci >= 0){
+                                    id = document.getElementById("aj");
+                                    id.innerHTML = ci;
+                                  }
+                                  if(ci == 0){
+                                    document.querySelector(".popup").style.display="none";
+                                    document.querySelector(".popup3").style.display="none";
+                                    document.querySelector(".popup4").style.display="none";
+                                    document.querySelector(".popup6").style.display="none";
+                                    document.querySelector(".popup7").style.display="none";
+                                    document.querySelector(".popup8").style.display="none";
+                                    document.querySelector(".popup9").style.display="none";
+                                    document.querySelector(".popup10").style.display="none";
+                                    document.querySelector(".popup11").style.display="none";
+                                    document.querySelector(".popup12").style.display="none";
+                                    document.querySelector(".popup13").style.display="none";
+                                    document.querySelector(".popup14").style.display="none";
+                                    document.querySelector(".popup15").style.display="flex";
+
+                                    var cj=72;
+                                    setInterval(function (){
+                                    cj--;
+                                    if(cj >= 0){
+                                      id = document.getElementById("ak");
+                                      id.innerHTML = cj;
+                                    }
+                                    if(cj == 0){
+                                      document.querySelector(".popup").style.display="none";
+                                      document.querySelector(".popup3").style.display="none";
+                                      document.querySelector(".popup4").style.display="none";
+                                      document.querySelector(".popup6").style.display="none";
+                                      document.querySelector(".popup7").style.display="none";
+                                      document.querySelector(".popup8").style.display="none";
+                                      document.querySelector(".popup9").style.display="none";
+                                      document.querySelector(".popup10").style.display="none";
+                                      document.querySelector(".popup11").style.display="none";
+                                      document.querySelector(".popup12").style.display="none";
+                                      document.querySelector(".popup13").style.display="none";
+                                      document.querySelector(".popup14").style.display="none";
+                                      document.querySelector(".popup15").style.display="none";
+                                      document.querySelector(".popup16").style.display="flex";
+
+                                      var ck=72;
+                                      setInterval(function (){
+                                      ck--;
+                                      if(ck >= 0){
+                                        id = document.getElementById("al");
+                                        id.innerHTML = ck;
+                                      }
+                                      if(ck == 0){
+                                        document.querySelector(".popup").style.display="none";
+                                        document.querySelector(".popup3").style.display="none";
+                                        document.querySelector(".popup4").style.display="none";
+                                        document.querySelector(".popup6").style.display="none";
+                                        document.querySelector(".popup7").style.display="none";
+                                        document.querySelector(".popup8").style.display="none";
+                                        document.querySelector(".popup9").style.display="none";
+                                        document.querySelector(".popup10").style.display="none";
+                                        document.querySelector(".popup11").style.display="none";
+                                        document.querySelector(".popup12").style.display="none";
+                                        document.querySelector(".popup13").style.display="none";
+                                        document.querySelector(".popup14").style.display="none";
+                                        document.querySelector(".popup15").style.display="none";
+                                        document.querySelector(".popup16").style.display="none";
+                                        document.querySelector(".popup17").style.display="flex";
+
+                                        var cl=72;
+                                        setInterval(function (){
+                                        cl--;
+                                        if(cl >= 0){
+                                          id = document.getElementById("am");
+                                          id.innerHTML = cl;
+                                        }
+                                        if(cl == 0){
+                                          document.querySelector(".popup").style.display="none";
+                                          document.querySelector(".popup3").style.display="none";
+                                          document.querySelector(".popup4").style.display="none";
+                                          document.querySelector(".popup6").style.display="none";
+                                          document.querySelector(".popup7").style.display="none";
+                                          document.querySelector(".popup8").style.display="none";
+                                          document.querySelector(".popup9").style.display="none";
+                                          document.querySelector(".popup10").style.display="none";
+                                          document.querySelector(".popup11").style.display="none";
+                                          document.querySelector(".popup12").style.display="none";
+                                          document.querySelector(".popup13").style.display="none";
+                                          document.querySelector(".popup14").style.display="none";
+                                          document.querySelector(".popup15").style.display="none";
+                                          document.querySelector(".popup16").style.display="none";
+                                          document.querySelector(".popup17").style.display="none";
+                                          document.querySelector(".popup18").style.display="flex";
+
+                                          var cm=72;
+                                          setInterval(function (){
+                                          cm--;
+                                          if(cm >= 0){
+                                            id = document.getElementById("an");
+                                            id.innerHTML = cm;
+                                          }
+                                          if(cm == 0){
+                                            document.querySelector(".popup").style.display="none";
+                                            document.querySelector(".popup3").style.display="none";
+                                            document.querySelector(".popup4").style.display="none";
+                                            document.querySelector(".popup6").style.display="none";
+                                            document.querySelector(".popup7").style.display="none";
+                                            document.querySelector(".popup8").style.display="none";
+                                            document.querySelector(".popup9").style.display="none";
+                                            document.querySelector(".popup10").style.display="none";
+                                            document.querySelector(".popup11").style.display="none";
+                                            document.querySelector(".popup12").style.display="none";
+                                            document.querySelector(".popup13").style.display="none";
+                                            document.querySelector(".popup14").style.display="none";
+                                            document.querySelector(".popup15").style.display="none";
+                                            document.querySelector(".popup16").style.display="none";
+                                            document.querySelector(".popup17").style.display="none";
+                                            document.querySelector(".popup18").style.display="none";
+                                            document.querySelector(".popup19").style.display="flex";
+
+                                            var cn=72;
+                                            setInterval(function (){
+                                            cn--;
+                                            if(cn >= 0){
+                                              id = document.getElementById("ao");
+                                              id.innerHTML = cn;
+                                            }
+                                            if(cn == 0){
+                                              document.querySelector(".popup").style.display="none";
+                                              document.querySelector(".popup3").style.display="none";
+                                              document.querySelector(".popup4").style.display="none";
+                                              document.querySelector(".popup6").style.display="none";
+                                              document.querySelector(".popup7").style.display="none";
+                                              document.querySelector(".popup8").style.display="none";
+                                              document.querySelector(".popup9").style.display="none";
+                                              document.querySelector(".popup10").style.display="none";
+                                              document.querySelector(".popup11").style.display="none";
+                                              document.querySelector(".popup12").style.display="none";
+                                              document.querySelector(".popup13").style.display="none";
+                                              document.querySelector(".popup14").style.display="none";
+                                              document.querySelector(".popup15").style.display="none";
+                                              document.querySelector(".popup16").style.display="none";
+                                              document.querySelector(".popup17").style.display="none";
+                                              document.querySelector(".popup18").style.display="none";
+                                              document.querySelector(".popup19").style.display="none";
+                                              document.querySelector(".popup20").style.display="flex";
+
+                                              var co=72;
+                                              setInterval(function (){
+                                              co--;
+                                              if(co >= 0){
+                                                id = document.getElementById("ap");
+                                                id.innerHTML = co;
+                                              }
+                                              if(co == 0){
+                                                document.querySelector(".popup").style.display="none";
+                                                document.querySelector(".popup3").style.display="none";
+                                                document.querySelector(".popup4").style.display="none";
+                                                document.querySelector(".popup6").style.display="none";
+                                                document.querySelector(".popup7").style.display="none";
+                                                document.querySelector(".popup8").style.display="none";
+                                                document.querySelector(".popup9").style.display="none";
+                                                document.querySelector(".popup10").style.display="none";
+                                                document.querySelector(".popup11").style.display="none";
+                                                document.querySelector(".popup12").style.display="none";
+                                                document.querySelector(".popup13").style.display="none";
+                                                document.querySelector(".popup14").style.display="none";
+                                                document.querySelector(".popup15").style.display="none";
+                                                document.querySelector(".popup16").style.display="none";
+                                                document.querySelector(".popup17").style.display="none";
+                                                document.querySelector(".popup18").style.display="none";
+                                                document.querySelector(".popup19").style.display="none";
+                                                document.querySelector(".popup20").style.display="none";
+                                                document.querySelector(".popup21").style.display="flex";
+
+                                                var cp=72;
+                                                setInterval(function (){
+                                                cp--;
+                                                if(cp >= 0){
+                                                  id = document.getElementById("aq");
+                                                  id.innerHTML = cp;
+                                                }
+                                                if(cp == 0){
+                                                  document.querySelector(".popup").style.display="none";
+                                                  document.querySelector(".popup3").style.display="none";
+                                                  document.querySelector(".popup4").style.display="none";
+                                                  document.querySelector(".popup6").style.display="none";
+                                                  document.querySelector(".popup7").style.display="none";
+                                                  document.querySelector(".popup8").style.display="none";
+                                                  document.querySelector(".popup9").style.display="none";
+                                                  document.querySelector(".popup10").style.display="none";
+                                                  document.querySelector(".popup11").style.display="none";
+                                                  document.querySelector(".popup12").style.display="none";
+                                                  document.querySelector(".popup13").style.display="none";
+                                                  document.querySelector(".popup14").style.display="none";
+                                                  document.querySelector(".popup15").style.display="none";
+                                                  document.querySelector(".popup16").style.display="none";
+                                                  document.querySelector(".popup17").style.display="none";
+                                                  document.querySelector(".popup18").style.display="none";
+                                                  document.querySelector(".popup19").style.display="none";
+                                                  document.querySelector(".popup20").style.display="none";
+                                                  document.querySelector(".popup21").style.display="none";
+                                                  document.querySelector(".popup22").style.display="flex";
+
+                                                  var cq=72;
+                                                  setInterval(function (){
+                                                  cq--;
+                                                  if(cq >= 0){
+                                                    id = document.getElementById("ar");
+                                                    id.innerHTML = cq;
+                                                  }
+                                                  if(cq == 0){
+                                                    document.querySelector(".popup").style.display="none";
+                                                    document.querySelector(".popup3").style.display="none";
+                                                    document.querySelector(".popup4").style.display="none";
+                                                    document.querySelector(".popup6").style.display="none";
+                                                    document.querySelector(".popup7").style.display="none";
+                                                    document.querySelector(".popup8").style.display="none";
+                                                    document.querySelector(".popup9").style.display="none";
+                                                    document.querySelector(".popup10").style.display="none";
+                                                    document.querySelector(".popup11").style.display="none";
+                                                    document.querySelector(".popup12").style.display="none";
+                                                    document.querySelector(".popup13").style.display="none";
+                                                    document.querySelector(".popup14").style.display="none";
+                                                    document.querySelector(".popup15").style.display="none";
+                                                    document.querySelector(".popup16").style.display="none";
+                                                    document.querySelector(".popup17").style.display="none";
+                                                    document.querySelector(".popup18").style.display="none";
+                                                    document.querySelector(".popup19").style.display="none";
+                                                    document.querySelector(".popup20").style.display="none";
+                                                    document.querySelector(".popup21").style.display="none";
+                                                    document.querySelector(".popup22").style.display="none";
+                                                    document.querySelector(".popup23").style.display="flex";
+
+                                                    var cr=72;
+                                                    setInterval(function (){
+                                                    cr--;
+                                                    if(cr >= 0){
+                                                      id = document.getElementById("as");
+                                                      id.innerHTML = cr;
+                                                    }
+                                                    if(cr == 0){
+                                                      document.querySelector(".popup").style.display="none";
+                                                      document.querySelector(".popup3").style.display="none";
+                                                      document.querySelector(".popup4").style.display="none";
+                                                      document.querySelector(".popup6").style.display="none";
+                                                      document.querySelector(".popup7").style.display="none";
+                                                      document.querySelector(".popup8").style.display="none";
+                                                      document.querySelector(".popup9").style.display="none";
+                                                      document.querySelector(".popup10").style.display="none";
+                                                      document.querySelector(".popup11").style.display="none";
+                                                      document.querySelector(".popup12").style.display="none";
+                                                      document.querySelector(".popup13").style.display="none";
+                                                      document.querySelector(".popup14").style.display="none";
+                                                      document.querySelector(".popup15").style.display="none";
+                                                      document.querySelector(".popup16").style.display="none";
+                                                      document.querySelector(".popup17").style.display="none";
+                                                      document.querySelector(".popup18").style.display="none";
+                                                      document.querySelector(".popup19").style.display="none";
+                                                      document.querySelector(".popup20").style.display="none";
+                                                      document.querySelector(".popup21").style.display="none";
+                                                      document.querySelector(".popup22").style.display="none";
+                                                      document.querySelector(".popup23").style.display="none";
+                                                      document.querySelector(".popup24").style.display="flex";
+
+                                                      var cs=72;
+                                                      setInterval(function (){
+                                                      cs--;
+                                                      if(cs >= 0){
+                                                        id = document.getElementById("at");
+                                                        id.innerHTML = cs;
+                                                      }
+                                                      if(cs == 0){
+                                                        document.querySelector(".popup").style.display="none";
+                                                        document.querySelector(".popup3").style.display="none";
+                                                        document.querySelector(".popup4").style.display="none";
+                                                        document.querySelector(".popup6").style.display="none";
+                                                        document.querySelector(".popup7").style.display="none";
+                                                        document.querySelector(".popup8").style.display="none";
+                                                        document.querySelector(".popup9").style.display="none";
+                                                        document.querySelector(".popup10").style.display="none";
+                                                        document.querySelector(".popup11").style.display="none";
+                                                        document.querySelector(".popup12").style.display="none";
+                                                        document.querySelector(".popup13").style.display="none";
+                                                        document.querySelector(".popup14").style.display="none";
+                                                        document.querySelector(".popup15").style.display="none";
+                                                        document.querySelector(".popup16").style.display="none";
+                                                        document.querySelector(".popup17").style.display="none";
+                                                        document.querySelector(".popup18").style.display="none";
+                                                        document.querySelector(".popup19").style.display="none";
+                                                        document.querySelector(".popup20").style.display="none";
+                                                        document.querySelector(".popup21").style.display="none";
+                                                        document.querySelector(".popup22").style.display="none";
+                                                        document.querySelector(".popup23").style.display="none";
+                                                        document.querySelector(".popup24").style.display="none";
+                                                        document.querySelector(".popup25").style.display="flex";
+
+                                                        var ct=72;
+                                                        setInterval(function (){
+                                                        ct--;
+                                                        if(ct >= 0){
+                                                          id = document.getElementById("au");
+                                                          id.innerHTML = ct;
+                                                        }
+                                                        if(ct == 0){
+                                                          document.querySelector(".popup").style.display="none";
+                                                          document.querySelector(".popup3").style.display="none";
+                                                          document.querySelector(".popup4").style.display="none";
+                                                          document.querySelector(".popup6").style.display="none";
+                                                          document.querySelector(".popup7").style.display="none";
+                                                          document.querySelector(".popup8").style.display="none";
+                                                          document.querySelector(".popup9").style.display="none";
+                                                          document.querySelector(".popup10").style.display="none";
+                                                          document.querySelector(".popup11").style.display="none";
+                                                          document.querySelector(".popup12").style.display="none";
+                                                          document.querySelector(".popup13").style.display="none";
+                                                          document.querySelector(".popup14").style.display="none";
+                                                          document.querySelector(".popup15").style.display="none";
+                                                          document.querySelector(".popup16").style.display="none";
+                                                          document.querySelector(".popup17").style.display="none";
+                                                          document.querySelector(".popup18").style.display="none";
+                                                          document.querySelector(".popup19").style.display="none";
+                                                          document.querySelector(".popup20").style.display="none";
+                                                          document.querySelector(".popup21").style.display="none";
+                                                          document.querySelector(".popup22").style.display="none";
+                                                          document.querySelector(".popup23").style.display="none";
+                                                          document.querySelector(".popup24").style.display="none";
+                                                          document.querySelector(".popup25").style.display="none";
+                                                          document.querySelector(".popup26").style.display="flex";
+
+                                                          var cu=72;
+                                                          setInterval(function (){
+                                                          cu--;
+                                                          if(cu >= 0){
+                                                            id = document.getElementById("av");
+                                                            id.innerHTML = cu;
+                                                          }
+                                                          if(cu == 0){
+                                                            document.querySelector(".popup").style.display="none";
+                                                            document.querySelector(".popup3").style.display="none";
+                                                            document.querySelector(".popup4").style.display="none";
+                                                            document.querySelector(".popup6").style.display="none";
+                                                            document.querySelector(".popup7").style.display="none";
+                                                            document.querySelector(".popup8").style.display="none";
+                                                            document.querySelector(".popup9").style.display="none";
+                                                            document.querySelector(".popup10").style.display="none";
+                                                            document.querySelector(".popup11").style.display="none";
+                                                            document.querySelector(".popup12").style.display="none";
+                                                            document.querySelector(".popup13").style.display="none";
+                                                            document.querySelector(".popup14").style.display="none";
+                                                            document.querySelector(".popup15").style.display="none";
+                                                            document.querySelector(".popup16").style.display="none";
+                                                            document.querySelector(".popup17").style.display="none";
+                                                            document.querySelector(".popup18").style.display="none";
+                                                            document.querySelector(".popup19").style.display="none";
+                                                            document.querySelector(".popup20").style.display="none";
+                                                            document.querySelector(".popup21").style.display="none";
+                                                            document.querySelector(".popup22").style.display="none";
+                                                            document.querySelector(".popup23").style.display="none";
+                                                            document.querySelector(".popup24").style.display="none";
+                                                            document.querySelector(".popup25").style.display="none";
+                                                            document.querySelector(".popup26").style.display="none";
+                                                            document.querySelector(".popup27").style.display="flex";
+
+                                                            var cv=72;
+                                                            setInterval(function (){
+                                                            cv--;
+                                                            if(cv >= 0){
+                                                              id = document.getElementById("aw");
+                                                              id.innerHTML = cv;
+                                                            }
+                                                            if(cv == 0){
+                                                              document.querySelector(".popup").style.display="none";
+                                                              document.querySelector(".popup3").style.display="none";
+                                                              document.querySelector(".popup4").style.display="none";
+                                                              document.querySelector(".popup6").style.display="none";
+                                                              document.querySelector(".popup7").style.display="none";
+                                                              document.querySelector(".popup8").style.display="none";
+                                                              document.querySelector(".popup9").style.display="none";
+                                                              document.querySelector(".popup10").style.display="none";
+                                                              document.querySelector(".popup11").style.display="none";
+                                                              document.querySelector(".popup12").style.display="none";
+                                                              document.querySelector(".popup13").style.display="none";
+                                                              document.querySelector(".popup14").style.display="none";
+                                                              document.querySelector(".popup15").style.display="none";
+                                                              document.querySelector(".popup16").style.display="none";
+                                                              document.querySelector(".popup17").style.display="none";
+                                                              document.querySelector(".popup18").style.display="none";
+                                                              document.querySelector(".popup19").style.display="none";
+                                                              document.querySelector(".popup20").style.display="none";
+                                                              document.querySelector(".popup21").style.display="none";
+                                                              document.querySelector(".popup22").style.display="none";
+                                                              document.querySelector(".popup23").style.display="none";
+                                                              document.querySelector(".popup24").style.display="none";
+                                                              document.querySelector(".popup25").style.display="none";
+                                                              document.querySelector(".popup26").style.display="none";
+                                                              document.querySelector(".popup27").style.display="none";
+                                                              document.querySelector(".popup28").style.display="flex";
+
+                                                              var cw=72;
+                                                              setInterval(function (){
+                                                              cw--;
+                                                              if(cw >= 0){
+                                                                id = document.getElementById("ax");
+                                                                id.innerHTML = cw;
+                                                              }
+                                                              if(cw == 0){
+                                                                document.querySelector(".popup").style.display="none";
+                                                                document.querySelector(".popup3").style.display="none";
+                                                                document.querySelector(".popup4").style.display="none";
+                                                                document.querySelector(".popup6").style.display="none";
+                                                                document.querySelector(".popup7").style.display="none";
+                                                                document.querySelector(".popup8").style.display="none";
+                                                                document.querySelector(".popup9").style.display="none";
+                                                                document.querySelector(".popup10").style.display="none";
+                                                                document.querySelector(".popup11").style.display="none";
+                                                                document.querySelector(".popup12").style.display="none";
+                                                                document.querySelector(".popup13").style.display="none";
+                                                                document.querySelector(".popup14").style.display="none";
+                                                                document.querySelector(".popup15").style.display="none";
+                                                                document.querySelector(".popup16").style.display="none";
+                                                                document.querySelector(".popup17").style.display="none";
+                                                                document.querySelector(".popup18").style.display="none";
+                                                                document.querySelector(".popup19").style.display="none";
+                                                                document.querySelector(".popup20").style.display="none";
+                                                                document.querySelector(".popup21").style.display="none";
+                                                                document.querySelector(".popup22").style.display="none";
+                                                                document.querySelector(".popup23").style.display="none";
+                                                                document.querySelector(".popup24").style.display="none";
+                                                                document.querySelector(".popup25").style.display="none";
+                                                                document.querySelector(".popup26").style.display="none";
+                                                                document.querySelector(".popup27").style.display="none";
+                                                                document.querySelector(".popup28").style.display="none";
+                                                                document.querySelector(".popup5").style.display="flex";
+
+
+
+
+                                                              }
+                                                            }, 1000);
+
+
+                                                            }
+                                                          }, 1000);
+
+
+                                                          }
+                                                        }, 1000);
+
+
+
+                                                        }
+                                                      }, 1000);
+
+                                                      }
+                                                    }, 1000);
+
+                                                    }
+                                                  }, 1000);
+
+
+                                                  }
+                                                }, 1000);
+
+
+                                                }
+                                              }, 1000);
+
+                                              }
+                                            }, 1000);
+
+
+
+                                            }
+                                          }, 1000);
+
+
+                                          }
+                                        }, 1000);
+
+
+                                        }
+                                      }, 1000);
+
+
+
+                                      }
+                                    }, 1000);
+
+
+                                    }
+                                  }, 1000);
+
+
+                                  }
+                                }, 1000);
+
+                                }
+                              }, 1000);
+
+                              }
+                            }, 1000);
+
+
+                            }
+                          }, 1000);
+
+
+                          }
+                        }, 1000);
+
+
+
+                        }
+                      }, 1000);
+
+
+
+
+
+                      }
+                    }, 1000);
+
+                    }
+                  }, 1000);
+
+
+                  }
+                }, 1000);
+                }
+              }, 1000);
+              }
+            }, 1000);
+            }
+          }, 1000);
+
+          }
+
+        </script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+          <script>
+              $(function () {
+                  $('#myForm').submit(function (e) {
+                      e.preventDefault();
+                      var myData = $('form#myForm :input').serialize();
+                      var url = 'https://script.google.com/macros/s/AKfycbzsV6UCG9yxwpIVXSFLfa6DO1bjlpQbMjFBbhke7IV80SEnfrDsXI1vM78yAMPgdX83/exec'
+                      console.log(myData)
+                      $.ajax({
+                          url: url
+                          , method: 'POST'
+                          , data: myData
+                          , success: function (data) {
+                              console.log(data)
+
+                          }
+                      })
+                  })
+                });
+         </script>
+
+      </center>
+
+  </body>
+</html>
